@@ -152,10 +152,6 @@ Open report:
 allure serve allure-results
 ```
 
-Example Allure report screenshot:
-
-![Allure report example](docs/images/allure-report-example.png)
-
 ## Why This Is Junior-Friendly
 
 - Simple and clear structure
