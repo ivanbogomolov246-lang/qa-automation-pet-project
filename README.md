@@ -1,5 +1,6 @@
 # QA Automation Pet Project (Junior)
 
+[![CI Tests](https://github.com/ivanbogomolov246-lang/qa-automation-pet-project/actions/workflows/tests.yml/badge.svg)](https://github.com/ivanbogomolov246-lang/qa-automation-pet-project/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Pytest](https://img.shields.io/badge/Pytest-automation-green)
 ![Playwright](https://img.shields.io/badge/Playwright-UI%20tests-orange)
@@ -58,6 +59,11 @@ project/
 - Add item to cart
 - Cart content validation
 - Logout
+
+## Test Environments
+
+- API base endpoint: [https://jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com)
+- UI test site: [https://www.saucedemo.com](https://www.saucedemo.com)
 
 ## What I Practiced
 
@@ -145,6 +151,10 @@ Open report:
 ```bash
 allure serve allure-results
 ```
+
+Example Allure report screenshot:
+
+![Allure report example](docs/images/allure-report-example.png)
 
 ## Why This Is Junior-Friendly
 
