@@ -1,13 +1,19 @@
 # QA Automation Pet Project (Junior)
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Pytest](https://img.shields.io/badge/Pytest-automation-green)
+![Playwright](https://img.shields.io/badge/Playwright-UI%20tests-orange)
+
 Pet project for a QA Automation Engineer (Junior/Junior+) resume.
 
-This project includes:
+## What Is Inside
+
 - API tests (`requests + pytest`)
 - UI tests (`Playwright + pytest`)
 - Simplified Page Object Model
 - Basic fixtures and config
 - Allure reporting support
+- API CI run with GitHub Actions
 
 ## Tech Stack
 
@@ -22,17 +28,18 @@ This project includes:
 
 ```text
 project/
-├── api/
-├── config/
-├── pages/
-├── tests/
-│   ├── api/
-│   └── ui/
-├── utils/
-├── conftest.py
-├── pytest.ini
-├── requirements.txt
-└── README.md
+|-- api/
+|-- config/
+|-- pages/
+|-- tests/
+|   |-- api/
+|   `-- ui/
+|-- utils/
+|-- .github/workflows/
+|-- conftest.py
+|-- pytest.ini
+|-- requirements.txt
+`-- README.md
 ```
 
 ## Test Coverage
@@ -51,6 +58,15 @@ project/
 - Add item to cart
 - Cart content validation
 - Logout
+
+## What I Practiced
+
+- Building API tests with `requests`
+- Structuring tests with pytest fixtures
+- Applying Page Object Model for UI tests
+- Separating configuration from test logic
+- Generating Allure reports
+- Running API tests in CI with GitHub Actions
 
 ## Quick Start
 
@@ -105,6 +121,16 @@ Run UI in headed mode:
 ```bash
 pytest -m ui --headed
 ```
+
+## CI (GitHub Actions)
+
+Workflow file:
+
+```text
+.github/workflows/tests.yml
+```
+
+It runs API tests on each push and pull request to `main`.
 
 ## Allure Reports
 
